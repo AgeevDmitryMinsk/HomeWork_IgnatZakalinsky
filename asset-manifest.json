@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HomeWork_IgnatZakalinsky/static/css/main.44e3bd66.css",
+    "main.js": "/HomeWork_IgnatZakalinsky/static/js/main.a8403d1e.js",
+    "static/js/787.66cb4309.chunk.js": "/HomeWork_IgnatZakalinsky/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/HomeWork_IgnatZakalinsky/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/HomeWork_IgnatZakalinsky/index.html",
+    "main.44e3bd66.css.map": "/HomeWork_IgnatZakalinsky/static/css/main.44e3bd66.css.map",
+    "main.a8403d1e.js.map": "/HomeWork_IgnatZakalinsky/static/js/main.a8403d1e.js.map",
+    "787.66cb4309.chunk.js.map": "/HomeWork_IgnatZakalinsky/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44e3bd66.css",
+    "static/js/main.a8403d1e.js"
+  ]
+}
