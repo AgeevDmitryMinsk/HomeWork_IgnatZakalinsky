@@ -1,11 +1,24 @@
 .spanBlock {
+    margin-bottom: 21px;
+    height: 36px;
 }
 
 .span {
+    cursor: pointer;
 }
 
 .input {
+    width: 276px;
+    height: 36px;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 24px;
+    margin-bottom: 21px;
 }
 
 .pen {
+    margin-right: 20px;
 }
