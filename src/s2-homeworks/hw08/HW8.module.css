@@ -1,23 +1,36 @@
 .item {
+    outline: black solid 2px;
 }
 
 .item:last-of-type {
 }
 
 .users {
+    width: 300px;
+    /*outline: red 1px solid;*/
+
 }
 
 .buttonsContainer {
+    margin-left: 100px;
+    margin-bottom: 15px;
 }
 
 .container {
 }
 
 .thead {
+    outline: blue 1px solid;
+    background: gray;
 }
 
 .nameCol {
+    /*outline: lawngreen 1px solid;*/
+    width: 230px;
+    border-bottom: gray;
+    padding-left: 10px;
 }
 
 .ageCol {
+    padding-left: 10px;
 }
