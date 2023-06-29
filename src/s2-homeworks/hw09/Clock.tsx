@@ -68,6 +68,7 @@ function Clock() {
     const stringMonth = new Intl.DateTimeFormat('en-US', {
         month: "long"
     }).format(date) || <br/> // пишут студенты
+    const more = s.more + (show ? ' ' + s.open : "")
 
     return (
         <div className={s.clock}>
@@ -84,17 +85,24 @@ function Clock() {
             </div>
 
             <div id={'hw9-more'}>
-                <div className={s.more}>
-                    {show ? (
+                {/*<div className={s.more}>*/}
+                <div className={more}>
+                    {/*{show ? (*/}
+                    {/*    <>*/}
+                    {/*        <span id={'hw9-month'}>{stringMonth}</span>,{' '}*/}
+                    {/*        <span id={'hw9-date'}>{stringDate}</span>*/}
+                    {/*    </>*/}
+                    {/*) : (*/}
+                    {/*    <>*/}
+                    {/*        <br/>*/}
+                    {/*    </>*/}
+                    {/*)}*/}
                         <>
+                            <div>добавил эффект плавного появления/исчезновения месяца и даты при наведении на день недели и время:</div>
                             <span id={'hw9-month'}>{stringMonth}</span>,{' '}
                             <span id={'hw9-date'}>{stringDate}</span>
                         </>
-                    ) : (
-                        <>
-                            <br/>
-                        </>
-                    )}
+
                 </div>
             </div>
 
@@ -102,7 +110,8 @@ function Clock() {
                 <SuperButton
                     id={'hw9-button-start'}
                     // disabled={true} // пишут студенты // задизэйблить если таймер запущен
-                    disabled={timerId? true :false} // пишут студенты // задизэйблить если таймер запущен
+                    // disabled={timerId? true :false} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={!!timerId} // пишут студенты // задизэйблить если таймер запущен - УПРОСТИЛ ЗАПИСЬ
                     onClick={start}
                 >
                     start
@@ -110,7 +119,8 @@ function Clock() {
                 <SuperButton
                     id={'hw9-button-stop'}
                     // disabled={true} // пишут студенты // задизэйблить если таймер не запущен
-                    disabled={timerId? false :true} // пишут студенты // задизэйблить если таймер не запущен
+                    //УПРОСТИЛ ЗАПИСЬ:
+                    disabled={!timerId} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}
                 >
                     stop
