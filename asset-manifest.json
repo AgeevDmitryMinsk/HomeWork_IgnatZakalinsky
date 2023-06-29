@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/HomeWork_IgnatZakalinsky/static/css/main.34b032fb.css",
-    "main.js": "/HomeWork_IgnatZakalinsky/static/js/main.ba29e8b7.js",
+    "main.css": "/HomeWork_IgnatZakalinsky/static/css/main.aa657968.css",
+    "main.js": "/HomeWork_IgnatZakalinsky/static/js/main.bff49315.js",
     "static/js/787.66cb4309.chunk.js": "/HomeWork_IgnatZakalinsky/static/js/787.66cb4309.chunk.js",
     "static/media/avatar-girl2.jpg": "/HomeWork_IgnatZakalinsky/static/media/avatar-girl2.dc11620947a1740ec915.jpg",
     "static/media/avatar.png": "/HomeWork_IgnatZakalinsky/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/HomeWork_IgnatZakalinsky/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
+    "static/media/Spinner-1s-200px.svg": "/HomeWork_IgnatZakalinsky/static/media/Spinner-1s-200px.b767aab46ea3fa309aff5e12d5006915.svg",
     "static/media/closeOutline.svg": "/HomeWork_IgnatZakalinsky/static/media/closeOutline.91a6693133923612a0702421ab3e9923.svg",
+    "static/media/editIcon.svg": "/HomeWork_IgnatZakalinsky/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
     "static/media/checked.svg": "/HomeWork_IgnatZakalinsky/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "index.html": "/HomeWork_IgnatZakalinsky/index.html",
     "static/media/burger.svg": "/HomeWork_IgnatZakalinsky/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
-    "main.34b032fb.css.map": "/HomeWork_IgnatZakalinsky/static/css/main.34b032fb.css.map",
-    "main.ba29e8b7.js.map": "/HomeWork_IgnatZakalinsky/static/js/main.ba29e8b7.js.map",
+    "main.aa657968.css.map": "/HomeWork_IgnatZakalinsky/static/css/main.aa657968.css.map",
+    "main.bff49315.js.map": "/HomeWork_IgnatZakalinsky/static/js/main.bff49315.js.map",
     "787.66cb4309.chunk.js.map": "/HomeWork_IgnatZakalinsky/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34b032fb.css",
-    "static/js/main.ba29e8b7.js"
+    "static/css/main.aa657968.css",
+    "static/js/main.bff49315.js"
   ]
 }
