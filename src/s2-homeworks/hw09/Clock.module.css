@@ -1,13 +1,22 @@
 .buttonsContainer {
+    margin-top: 30px;
+    transition: background 3s ease, color 2s linear;
 }
 
 .clock {
+    transition: background 3s ease, color 2s linear;
 }
 
 .watch {
+    margin-bottom: 15px;
+    outline: #FF1A47 1px solid;
+    width: fit-content;
+    transition: background 3s ease, color 2s linear;
 }
 
 .watch strong {
+    font-weight: 900;
+    transition: background 3s ease, color 2s linear;
 }
 
 .more {
