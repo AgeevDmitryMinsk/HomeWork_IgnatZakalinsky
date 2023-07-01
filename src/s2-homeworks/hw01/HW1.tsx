@@ -5,6 +5,8 @@ import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png';
 import avatar_girl2 from "./avatar-girl2.jpg";
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../hw10/bll/store";
 
 /*
 * 1 - описать тип MessageType
@@ -53,6 +55,8 @@ export const friendMessage0: MessageType = {
 }
 
 const HW1 = () => {
+
+    console.log('state in HW_1= ', useSelector<AppStoreType>(state => state) )
     return (
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>
