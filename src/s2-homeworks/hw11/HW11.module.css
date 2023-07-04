@@ -1,8 +1,19 @@
 .container {
+    /*outline: #FF1A47 1px solid;*/
+    width: 300px;
 }
 
 .wrapper {
+    /*outline: lawngreen 1px solid;*/
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50px auto 50px;
 }
 
 .number {
+    /*outline: brown 1px solid;*/
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }

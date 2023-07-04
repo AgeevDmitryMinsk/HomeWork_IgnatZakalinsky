@@ -23,6 +23,6 @@ type LoadingActionType = {
 export const loadingAC = (isLoading: boolean): LoadingActionType => ({
     type: 'CHANGE_LOADING',
     isLoading,
-})
+} as const )
 
 type ActionsType = ReturnType<typeof loadingAC>
