@@ -17,17 +17,12 @@ function HW11() {
 
     const change = (event: Event, value: Array<number>) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
-        console.log('event=', event.target)
+
         console.log('value=', value)
-        // value.some((a) => a === 1)
-        // if(event.target){
-        //     if (value.some((a) => a === 1))  setValue1(+(event.target as HTMLInputElement).value[0])
-        //     if (value.some((a) => a === 2))  setValue2(+(event.target as HTMLInputElement).value[1])
-        // }
-        // value.some((a) => a === 1)
+        console.log('event.target.value=', (event.target as HTMLInputElement).value)
         if (event.target) {
-            if (value.some((a) => a === 1)) setValue1(+(event.target as HTMLInputElement).value[0])
-            if (value.some((a) => a === 2)) setValue2(+(event.target as HTMLInputElement).value[1])
+            if (value.includes(1)) setValue1(+(event.target as HTMLInputElement).value[0])
+            if (value.includes(2)) setValue2(+(event.target as HTMLInputElement).value[1])
         }
 
     }
