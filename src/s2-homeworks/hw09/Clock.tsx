@@ -68,7 +68,8 @@ function Clock() {
     const stringMonth = new Intl.DateTimeFormat('en-US', {
         month: "long"
     }).format(date) || <br/> // пишут студенты
-    const more = s.more + (show ? ' ' + s.open : "")
+    // const more = s.more + (show ? ' ' + s.open : "") // -> добавил эффект плавного появления/исчезновения месяца и даты при наведении на день недели
+    const more = s.more + s.open
 
     return (
         <div className={s.clock}>
@@ -87,21 +88,21 @@ function Clock() {
             <div id={'hw9-more'}>
                 {/*<div className={s.more}>*/}
                 <div className={more}>
-                    {/*{show ? (*/}
-                    {/*    <>*/}
-                    {/*        <span id={'hw9-month'}>{stringMonth}</span>,{' '}*/}
-                    {/*        <span id={'hw9-date'}>{stringDate}</span>*/}
-                    {/*    </>*/}
-                    {/*) : (*/}
-                    {/*    <>*/}
-                    {/*        <br/>*/}
-                    {/*    </>*/}
-                    {/*)}*/}
+                    {show ? (
                         <>
-                            <div>добавил эффект плавного появления/исчезновения месяца и даты при наведении на день недели и время:</div>
                             <span id={'hw9-month'}>{stringMonth}</span>,{' '}
                             <span id={'hw9-date'}>{stringDate}</span>
                         </>
+                    ) : (
+                        <>
+                            <br/>
+                        </>
+                    )}
+                    {/*    <>*/}
+                    {/*        <div>добавил эффект плавного появления/исчезновения месяца и даты при наведении на день недели и время:</div>*/}
+                    {/*        <span id={'hw9-month'}>{stringMonth}</span>,{' '}*/}
+                    {/*        <span id={'hw9-date'}>{stringDate}</span>*/}
+                    {/*    </>*/}
 
                 </div>
             </div>
