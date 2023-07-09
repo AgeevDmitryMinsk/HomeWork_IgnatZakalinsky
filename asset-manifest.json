@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HomeWork_IgnatZakalinsky/static/css/main.374c899c.css",
-    "main.js": "/HomeWork_IgnatZakalinsky/static/js/main.b13435f1.js",
+    "main.js": "/HomeWork_IgnatZakalinsky/static/js/main.ca149ee4.js",
     "static/js/787.66cb4309.chunk.js": "/HomeWork_IgnatZakalinsky/static/js/787.66cb4309.chunk.js",
     "static/media/avatar-girl2.jpg": "/HomeWork_IgnatZakalinsky/static/media/avatar-girl2.dc11620947a1740ec915.jpg",
     "static/media/avatar.png": "/HomeWork_IgnatZakalinsky/static/media/avatar.d947cb9d0d13765666b6.png",
@@ -13,11 +13,11 @@
     "index.html": "/HomeWork_IgnatZakalinsky/index.html",
     "static/media/burger.svg": "/HomeWork_IgnatZakalinsky/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
     "main.374c899c.css.map": "/HomeWork_IgnatZakalinsky/static/css/main.374c899c.css.map",
-    "main.b13435f1.js.map": "/HomeWork_IgnatZakalinsky/static/js/main.b13435f1.js.map",
+    "main.ca149ee4.js.map": "/HomeWork_IgnatZakalinsky/static/js/main.ca149ee4.js.map",
     "787.66cb4309.chunk.js.map": "/HomeWork_IgnatZakalinsky/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.374c899c.css",
-    "static/js/main.b13435f1.js"
+    "static/js/main.ca149ee4.js"
   ]
 }
