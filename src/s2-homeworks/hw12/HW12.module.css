@@ -5,7 +5,8 @@
 
 [data-theme='2'] {
     --color: #000000;
-    --background: #DDEEFF;
+    /*--background: #DDEEFF;*/
+    --background: #89CFF0;
 }
 
 [data-theme='3'] {
