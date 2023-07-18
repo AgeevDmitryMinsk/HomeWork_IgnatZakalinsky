@@ -20,29 +20,61 @@ const HW13 = () => {
     const [info, setInfo] = useState('')
     const [image, setImage] = useState('')
 
+    // дизэйблить кнопки пока идёт запрос:
+    const [isDisabledButton, setIsDisabledButton] = useState(false)
+
     const send = (x?: boolean | null) => () => {
+
+        console.log('send HW13 x=', x)
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
                 : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
+        console.log('send HW13 url=', url)
         setCode('')
         setImage('')
         setText('')
         setInfo('...loading')
 
+        setIsDisabledButton(true)
         axios
             .post(url, {success: x})
             .then((res) => {
+
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
+                console.log(res.data)
+                setText(res.data.errorText)
+                setInfo(res.data.info)
 
             })
             .catch((e) => {
                 // дописать
-
+                // console.log('catch e', e.response)
+                console.log('catch e', e)
+                setIsDisabledButton(true)
+                if (e.message==="Network Error") {
+                    setCode('Error!')
+                    setImage(errorUnknown)
+                    setText(e.message)
+                    setInfo(e.name)
+                }
+                if (e.message==="Request failed with status code 400") {
+                    setCode("Ошибка 400!")
+                    setImage(error400)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                }
+                if (e.message==="Request failed with status code 500") {
+                    setCode("Ошибка 500!")
+                    setImage(error500)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                }
             })
+             .finally(()=>setIsDisabledButton(false))
     }
 
     return (
@@ -56,6 +88,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisabledButton} //дизэйблить кнопки пока идёт запрос
 
                     >
                         Send true
@@ -65,6 +98,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisabledButton} //дизэйблить кнопки пока идёт запрос
 
                     >
                         Send false
@@ -74,7 +108,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={isDisabledButton} //дизэйблить кнопки пока идёт запрос
                     >
                         Send undefined
                     </SuperButton>
@@ -83,6 +117,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisabledButton} //дизэйблить кнопки пока идёт запрос
 
                     >
                         Send null
